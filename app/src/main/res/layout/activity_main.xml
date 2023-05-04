@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/baseball">
+
+    <TextView
+        android:id="@+id/tv_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="숫자 야구게임"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="24sp"
+        android:fontFamily="@font/kotra_hope"/>
+        <EditText
+            android:id="@+id/bas_ball1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/baseline_sports_baseball_24"
+            android:textColor="@color/white"
+           android:layout_below="@id/tv_game"
+            android:layout_marginLeft="80dp"
+            android:gravity="center"
+            android:inputType="number"/>
+    <EditText
+        android:id="@+id/bas_ball2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/baseline_sports_baseball_24"
+        android:textColor="@color/white"
+        android:layout_below="@id/tv_game"
+        android:gravity="center"
+        android:layout_toRightOf="@id/bas_ball1"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/bas_ball3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/baseline_sports_baseball_24"
+        android:textColor="@color/white"
+        android:layout_below="@id/tv_game"
+        android:layout_toRightOf="@id/bas_ball2"
+        android:gravity="center"
+        android:inputType="number"/>
+    <Button
+        android:id="@+id/btn_result"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bas_ball2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/black"
+        android:text="정답 입력"
+        android:textStyle="bold"/>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="230dp"
+       android:background="@color/white"
+       android:layout_alignParentBottom="true"
+       android:layout_marginBottom="100dp">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="25sp"
+           android:fontFamily="@font/kotra_hope"
+           android:text="246 : 1strike 2ball 0out"/>
+
+   </RelativeLayout>
+
+
+
+
+</RelativeLayout>
